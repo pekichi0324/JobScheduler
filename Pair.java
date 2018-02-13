@@ -16,6 +16,7 @@ public class Pair {
 
     private int startTime;
     private int endTime;
+    private int duration;
 
 
     public Pair(int theStartTime, int theEndTime) {
@@ -23,12 +24,18 @@ public class Pair {
         endTime = theEndTime;
     }
 
-    public int getStartTime() {
+    public int getStartTime() 
+    {
         return startTime;
     }
 
-    public  int getEndTime() {
+    public  int getEndTime() 
+    {
         return endTime;
+    }
+    public int getDuration()
+    {
+        return endTime - startTime;
     }
 
 }
