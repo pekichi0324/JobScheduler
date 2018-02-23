@@ -81,6 +81,23 @@ public class Job
 	{
 		return runningTime;
 	}
+	public int getStartingTimeAt(int n)
+	{
+		return runningTime.get(n).getStartTime();
+	}
+	public int getEndingTimeAt(int n)
+	{
+		return runningTime.get(n).getEndTime();
+	}
+	public int getRunningTimeListSize()
+	{
+		return runningTime.size();
+	}
+	public int getStartingTime()
+	{
+		return runningTime.get(0).getStartTime();
+
+	}
 	
 }
 
